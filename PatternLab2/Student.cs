@@ -21,7 +21,7 @@ namespace PatternLab2
         [JsonProperty("Institution")]
         public string Institution { get; set; }
         public IEducationalInstitution educationalInstitutionObject { set; get; }
-
+        public bool verified { get; set; }
         public void ShowInfoAboutFutureEducation()
         {
 
