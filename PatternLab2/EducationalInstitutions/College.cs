@@ -13,7 +13,7 @@ namespace PatternLab2.EducationalInstitutions
 
             string Message = "";
             bool canContinue = false;
-            if (student.AverageMark > 9)
+            if (student.AverageMark > 3)
             {
                 Message += "Your AverageMark is sufficient to continue your education!";
                 canContinue = true;
