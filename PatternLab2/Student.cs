@@ -20,27 +20,29 @@ namespace PatternLab2
         public int Course { get; set; }
         [JsonProperty("Institution")]
         public string Institution { get; set; }
-        public IEducationalInstitution educationalInstitutionObject { set; get; }
+        //public IEducationalInstitution educationalInstitutionObject { set; get; }
 
         public void ShowInfoAboutFutureEducation()
         {
 
-            string Message = educationalInstitutionObject.GetInfoAboutFutureEducation(this);
-            Console.WriteLine(Message);
-            //if(Institution == Institutions.College)
-            //{
-            //    College.GetInfoAboutFutureEducation(this);
-            //}
-            //else if (Institution == Institutions.School)
-            //{
-            //    School.GetInfoAboutFutureEducation(this);
-            //}
-            //else if (Institution == Institutions.School)
-            //{
-            //    University.GetInfoAboutFutureEducation(this);
-            //}
+            //string Message = educationalInstitutionObject.GetInfoAboutFutureEducation(this);
+            // Console.WriteLine(Message);
+            string message;
+            if (Institution == "College")
+            {
+                message = new College().GetInfoAboutFutureEducation(this);
+            }
+            else if (Institution == "School")
+            {
+                message = new School().GetInfoAboutFutureEducation(this);
+            }
+            else if (Institution == "University")
+            {
+                message = new University().GetInfoAboutFutureEducation(this);
+            }
 
         }
                                                                                                                        
     }
 }
+

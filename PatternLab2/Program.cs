@@ -33,18 +33,18 @@ namespace PatternLab2
 
             foreach(var i in items)
             {
-                if (i.Institution == "School")
-                {
-                    i.educationalInstitutionObject = new School();
-                }
-                else if (i.Institution == "University")
-                {
-                    i.educationalInstitutionObject = new University();
-                }
-                else if (i.Institution == "College")
-                {
-                    i.educationalInstitutionObject = new College();
-                }
+                //if (i.Institution == "School")
+                //{
+                //    i.educationalInstitutionObject = new School();
+                //}
+                //else if (i.Institution == "University")
+                //{
+                //    i.educationalInstitutionObject = new University();
+                //}
+                //else if (i.Institution == "College")
+                //{
+                //    i.educationalInstitutionObject = new College();
+                //}
                 i.ShowInfoAboutFutureEducation();
             }
             Console.ReadLine();
