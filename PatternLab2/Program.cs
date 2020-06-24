@@ -24,9 +24,9 @@ namespace PatternLab2
                 throw new Exception("File is empty");
             }
 
-            Console.WriteLine(json);
-            Console.WriteLine();
-            Console.WriteLine();
+            //Console.WriteLine(json);
+           // Console.WriteLine();
+           // Console.WriteLine();
 
 
             List<Student> items = JsonConvert.DeserializeObject<List<Student>>(json);
